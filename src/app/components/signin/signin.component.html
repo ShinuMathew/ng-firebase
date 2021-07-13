@@ -1,0 +1,17 @@
+<div class="signin-form">
+    <h2>Sign In</h2>
+    <div class="form-group">
+        <!-- <label for="email">Email</label> -->
+        <input #email type="text" placeholder="Email" id="emailSignin" class="form-control"/>
+    </div>    
+    <div class="form-group password">
+        <!-- <label for="email">Password</label> -->
+        <input #password [type]="hide ? 'password' : 'text'" placeholder="Password" id="passwordSignin" class="form-control">
+        <span class="show-password" (click)="showPassword()"><i class="fas fa-eye"></i></span>
+    </div>    
+    <a href="#">Forgot Password?</a><br>
+    <div class="signin-button">
+        <button (click)="onSignIn(email.value, password.value)" class="btn btn-primary">Submit</button>    
+    </div>
+    <p>New user? <a href="#">Register Now</a></p>
+</div>    

@@ -1,0 +1,50 @@
+.container {
+  min-width: 60vw;
+  min-height: 60vh;
+  background-color: rgba(255, 255, 255, 0.993);
+  padding: 40px 30px;
+  /* border-radius: 50px; */
+}
+
+.login-space {
+  position: relative;
+  min-width: 60vw;
+  min-height: 60vh;
+}
+
+.signin-container,
+.signup-container {
+  padding: 30px;
+}
+
+.signin-container {
+  border-right: 2px solid rgba(0, 0, 0, 0.267);
+}
+
+.signup-container {
+  border-left: 2px solid rgba(0, 0, 0, 0.267);
+}
+
+/* 
+.cover {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: antiquewhite;
+}
+
+.cover:hover {
+    cursor: pointer;
+    animation: moveleft 1s forwards 0.5s ease-in-out;
+}
+
+@keyframes moveleft {
+  0% {
+    top: 1px;
+    right: 1px;
+  }
+  100% {
+    top: 1px;
+    left: 1px;    
+  }
+} */
