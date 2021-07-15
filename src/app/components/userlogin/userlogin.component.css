@@ -1,14 +1,16 @@
-.container {
-  min-width: 60vw;
+.login-container {
+  width: 60vw;
   min-height: 60vh;
   background-color: rgba(255, 255, 255, 0.993);
-  padding: 40px 30px;
+  padding: 20px 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px black;
   /* border-radius: 50px; */
 }
 
 .login-space {
   position: relative;
-  min-width: 60vw;
+  min-width: 50vw;
   min-height: 60vh;
 }
 

@@ -1,2 +1,2 @@
-<h1>Welcome User</h1>
-<button (click)="logout()">Logout</button>
+<app-header (is-loggedout)="onLogout()" *ngIf="isLoggedIn"></app-header>
+<app-userlogin (is-loggedin)="onLogin()" *ngIf="!isLoggedIn"></app-userlogin>

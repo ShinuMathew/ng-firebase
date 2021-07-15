@@ -19,7 +19,11 @@ export class FirebaseService {
       console.log(`USER: ${user.user}`);
       if (user.user) {
         this.isLoggedIn = true;
-        localStorage.setItem('user', JSON.stringify(user.user));
+        let token = {
+          user : user.user,
+          timestamp : Date.now()
+        }
+        localStorage.setItem('user', JSON.stringify(token));
         console.log(user.user.displayName)
       }
     } catch (e) {
@@ -41,7 +45,11 @@ export class FirebaseService {
       })
       if (user.user) {
         this.isLoggedIn = true;
-        localStorage.setItem('user', JSON.stringify(user.user));
+        let token = {
+          user : user.user,
+          timestamp : Date.now()
+        }
+        localStorage.setItem('user', JSON.stringify(token));
         console.log(user.user.displayName)
       }
     } catch (e) {
@@ -62,4 +70,5 @@ export class FirebaseService {
       console.log(this.message)
     }
   }
+
 }

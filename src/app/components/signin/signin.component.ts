@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FirebaseService } from 'src/app/services/firebase.service';
 
 @Component({
@@ -8,9 +8,9 @@ import { FirebaseService } from 'src/app/services/firebase.service';
 })
 export class SigninComponent implements OnInit {
   
-  @Input('is-loggedin')
-  public isLoggedIn : boolean;
-
+  @Output('is-loggedin')
+  public isLoggedIn : EventEmitter<boolean> = new EventEmitter();
+  
   public hide : boolean = true;
   constructor(public firebaseService : FirebaseService) { }
 
@@ -19,6 +19,7 @@ export class SigninComponent implements OnInit {
 
   async onSignIn(email, password) {
     await this.firebaseService.signInWithEmailAndPassword(email, password);
+    this.isLoggedIn.emit();
   }
 
   showPassword() {

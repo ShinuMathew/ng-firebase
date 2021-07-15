@@ -1,0 +1,60 @@
+header {
+    width:100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(51, 53, 65);
+    letter-spacing: 1px;
+}
+
+.logo {
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.title {
+    width: 70vw;
+    text-align: center;
+    color: white;
+}
+
+.nav-links ul {
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;   
+    margin-bottom: 0px !important; 
+}
+
+.nav-links ul li {
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px !important;
+    color: white;
+}
+
+.nav-links ul li p {    
+    margin : 0px;
+}
+
+.nav-links ul li p span {    
+    letter-spacing: 1px;
+    font-size: 1.2rem
+}
+
+.nav-links ul li a {
+    text-decoration: none; 
+    color: white;
+}

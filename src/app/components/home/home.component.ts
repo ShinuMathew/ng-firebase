@@ -8,12 +8,23 @@ import { FirebaseService } from '../../services/firebase.service';
 })
 export class HomeComponent implements OnInit {
 
+  public isLoggedIn : boolean = false;
   constructor(public firebaseService : FirebaseService) { }
 
   ngOnInit(): void {
+    if(localStorage.getItem('user')) {
+      this.isLoggedIn = true;
+    }
   }
 
-  async logout() {
-    await this.firebaseService.logout()
+  onLogout() {
+    console.log("On Logout called")
+    this.isLoggedIn = false;
   }
+
+  onLogin() {
+    console.log("On Login called")
+    this.isLoggedIn = true;
+  }
+
 }
