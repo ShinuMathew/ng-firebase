@@ -14,6 +14,7 @@ import { FirebaseService } from './services/firebase.service';
 import { UserloginComponent } from './components/userlogin/userlogin.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PrivateheaderComponent } from './components/privateheader/privateheader.component';
+import { LoadingComponent } from './components/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PrivateheaderComponent } from './components/privateheader/privateheader
     SignupComponent,
     UserloginComponent,
     HeaderComponent,
-    PrivateheaderComponent
+    PrivateheaderComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

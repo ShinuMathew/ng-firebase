@@ -8,7 +8,7 @@
   <nav class="nav-links">
     <ul>
         <li>
-            <p>Welcome <span>{{user|titlecase}}</span> </p>
+            <p><span>{{user|titlecase}}</span> </p>
         </li>
         <!-- <li>
             <a href="#">Home</a>
@@ -22,3 +22,4 @@
     </ul>
   </nav>
 </header>
+<app-loading *ngIf="loading"></app-loading>

@@ -43,6 +43,7 @@ export class FirebaseService {
       user.user.updateProfile({
         displayName : `${firstName} ${lastName}`
       })
+      user = await this.angularFireAuth.signInWithEmailAndPassword(email, password)
       if (user.user) {
         this.isLoggedIn = true;
         let token = {

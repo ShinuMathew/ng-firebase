@@ -8,7 +8,7 @@ import { FirebaseService } from '../../services/firebase.service';
 })
 export class HomeComponent implements OnInit {
 
-  public isLoggedIn : boolean = false;
+  public isLoggedIn : boolean = false;  
   constructor(public firebaseService : FirebaseService) { }
 
   ngOnInit(): void {
