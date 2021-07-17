@@ -1,17 +1,31 @@
 .login-container {
-  width: 60vw;
-  min-height: 60vh;
-  background-color: rgba(255, 255, 255, 0.993);
-  padding: 20px 20px;
-  margin-top: 20px;
-  box-shadow: 0 0 10px black;
+  width: 100vw;
+  height: 100vh;
   /* border-radius: 50px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .login-space {
+  background-color: rgba(255, 255, 255, 0.993);
+  box-shadow: 0 0 10px black;
+  padding: 20px 20px;
+  margin-top: 20px;
   position: relative;
-  min-width: 50vw;
-  min-height: 60vh;
+  width: 60vw;
+  height: 80vh;
+  animation: appear 1s forwards ease-in;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .signin-container,
